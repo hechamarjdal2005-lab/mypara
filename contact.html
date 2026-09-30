@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Parapharmacie My Para, Béni Mellal</title>
+<meta name="description" content="Contactez My Para : Quartier Moderne, 26 Rue 10, Béni Mellal 23600. WhatsApp 06 61 06 76 21. Ouvert tous les jours jusqu'à 21h00.">
+<meta name="theme-color" content="#5aa483">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%235aa483'/%3E%3Cpath d='M52 26c0 12-16 20-16 34a16 16 0 0 0 32 0c0-14-16-22-16-34Z' fill='none' stroke='%23fff' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body data-page="contact">
+
+<body data-page="contact">
+<!-- ============================== NAVBAR ============================== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo" href="index.html" aria-label="My Para, accueil">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/><path d="M13 6.5 8 3"/><rect x="6.4" y="1.6" width="2.2" height="4.6" rx="1.1"/></svg>
+      </span>
+      <span class="logo__txt">
+        <span class="logo__name">My Para</span>
+        <span class="logo__sub">Béni Mellal</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link is-active" href="contact.html">Boutique</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="about.html">À propos</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+
+    <button class="icon-btn" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <button class="icon-btn" type="button" data-cart-btn aria-label="Ouvrir le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="cart-badge">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================== MENU MOBILE ============================== -->
+<div class="nav-menu" id="navMenu">
+  <ul class="nav-menu__list">
+    <li class="nav-menu__item" style="--i:0"><a href="index.html" style="color:inherit">Accueil</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:1"><a class="is-active" href="contact.html" style="color:inherit">Boutique</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:2"><a href="services.html" style="color:inherit">Services</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:3"><a href="about.html" style="color:inherit">À propos</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:4"><a href="contact.html" style="color:inherit">Contact</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+  </ul>
+  <div class="nav-menu__foot">
+    <a class="btn btn--wa btn--block" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20poser%20une%20question." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+      Demander conseil
+    </a>
+    <p class="nav-menu__meta"><strong>Quartier Moderne</strong> — 26 Rue 10, Béni Mellal 23600</p>
+    <p class="nav-menu__meta">Ouvert tous les jours · <strong>jusqu'à 21h00</strong></p>
+  </div>
+</div>
+
+<main>
+
+<!-- ============================== EN-TÊTE ============================== -->
+<section class="phero">
+  <div class="container phero__inner">
+    <nav class="crumbs" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      <span>Contact</span>
+    </nav>
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      Nous joindre
+    </span>
+    <h1>Une question, un conseil, une commande ?</h1>
+    <p class="t-lead">Le plus rapide, c'est WhatsApp. Sinon, passez nous voir — Quartier Moderne, on est ouvert tous les jours jusqu'à 21h00.</p>
+  </div>
+</section>
+
+<!-- ============================== FORMULAIRE + INFOS ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="cols2 cols2--aside">
+
+      <!-- ---------- formulaire ---------- -->
+      <div class="panel" data-reveal>
+        <h3>Écrivez-nous</h3>
+        <p>Ce formulaire est là pour vous aider. Pour une commande ou un conseil produit, WhatsApp reste plus rapide.</p>
+
+        <div class="form__ok" data-form-ok role="status">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <span><b>Message bien reçu !</b><br>Merci — notre pharmacienne vous répond très vite, généralement par WhatsApp ou par téléphone.</span>
+        </div>
+
+        <form class="form" style="margin-top:20px" data-form novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="f-nom">Nom complet <span class="req">*</span></label>
+              <input id="f-nom" name="nom" type="text" placeholder="Salma Bennani" required autocomplete="name">
+              <span class="field__err">Merci d'indiquer votre nom.</span>
+            </div>
+            <div class="field">
+              <label for="f-tel">Téléphone</label>
+              <input id="f-tel" name="tel" type="tel" placeholder="06 12 34 56 78" autocomplete="tel">
+              <span class="field__err">Numéro invalide.</span>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="f-mail">Email <span class="req">*</span></label>
+              <input id="f-mail" name="email" type="email" placeholder="salma@email.com" required autocomplete="email">
+              <span class="field__err">Merci d'indiquer une adresse email valide.</span>
+            </div>
+            <div class="field">
+              <label for="f-sujet">Sujet</label>
+              <select id="f-sujet" name="sujet">
+                <option>Conseil produit / peau</option>
+                <option>Conseil cheveux &amp; anti-chute</option>
+                <option>Maman &amp; bébé</option>
+                <option>Commande &amp; livraison</option>
+                <option>Question sur un produit</option>
+                <option>Autre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-msg">Votre message <span class="req">*</span></label>
+            <textarea id="f-msg" name="message" placeholder="Décrivez votre besoin : type de peau, ce qui vous gêne, produits que vous utilisez déjà…" required></textarea>
+            <span class="field__err">Merci d'écrire quelques mots.</span>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="rgpd" required>
+            <span>J'accepte que My Para utilise ces informations pour me recontacter au sujet de ma demande.</span>
+          </label>
+
+          <button class="btn btn--mint btn--lg btn--block" type="submit">
+            Envoyer mon message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <p class="cart__fine" style="margin-top:0">Pour une réponse immédiate, écrivez-nous directement sur WhatsApp au 06 61 06 76 21.</p>
+        </form>
+      </div>
+
+      <!-- ---------- infos pratiques ---------- -->
+      <div data-reveal="right" style="display:grid;gap:16px">
+
+        <div class="panel">
+          <h3>Nous joindre</h3>
+          <div style="margin-top:6px">
+            <div class="info-row">
+              <span class="ic ic--wa">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+              </span>
+              <div>
+                <div class="t">WhatsApp &amp; téléphone</div>
+                <div class="v"><a href="https://wa.me/212661067621" target="_blank" rel="noopener">06 61 06 76 21</a></div>
+                <div class="s">Réponse en quelques minutes aux horaires d'ouverture</div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <div class="t">Adresse</div>
+                <div class="v">Quartier Moderne, 26 Rue 10</div>
+                <div class="s">Béni Mellal 23600, Maroc</div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="ic ic--coral">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V5a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4h-3"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg>
+              </span>
+              <div>
+                <div class="t">Livraison à domicile</div>
+                <div class="v">Béni Mellal &amp; alentours</div>
+                <div class="s">Le jour même, offerte dès 400 DH d'achat</div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn--wa btn--block" style="margin-top:20px" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20vous%20%C3%A9crire." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+
+        <div class="panel">
+          <h3>Horaires d'ouverture</h3>
+          <p>Ouvert tous les jours, sans interruption.</p>
+          <div class="hours">
+            <div class="hours__r" data-day="1"><span class="d">Lundi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="2"><span class="d">Mardi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="3"><span class="d">Mercredi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="4"><span class="d">Jeudi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="5"><span class="d">Vendredi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="6"><span class="d">Samedi</span><span class="h">09h00 – 21h00</span></div>
+            <div class="hours__r" data-day="0"><span class="d">Dimanche</span><span class="h">09h00 – 21h00</span></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Nous suivre</h3>
+          <p>Les conseils, les nouveautés, les promotions. Et vous pouvez nous écrire en message privé.</p>
+          <div class="socials" style="margin-top:18px">
+            <a class="soc" href="https://instagram.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Instagram @parapharmacie_benimellal" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="soc" href="https://facebook.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Facebook My Para" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.9.5-1.2 1.2-1.2H17V2.5h-2.6C11.2 2.5 10 4.4 10 6.8v1.7H8V12h2v9.5h4V12h2.6l.5-3.5Z"/></svg>
+            </a>
+            <a class="soc soc--wa" href="https://wa.me/212661067621" target="_blank" rel="noopener" aria-label="WhatsApp My Para" title="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            </a>
+          </div>
+          <p style="margin-top:14px;font-size:.86rem">Instagram : <b style="color:var(--mint-700)">@parapharmacie_benimellal</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CARTE ============================== -->
+<section class="section section--tint" style="padding-top:clamp(44px,6vw,72px)">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.6-9.5-9A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 21.5 12c-2 4.4-9.5 9-9.5 9Z"/></svg>
+        Nous trouver
+      </span>
+      <h2 style="margin-top:14px">Quartier Moderne,<br>26 Rue 10 — Béni Mellal.</h2>
+      <p class="t-lead">À deux pas du boulevard principal, avec un parking juste devant. Livraisons à domicile dans tout Béni Mellal.</p>
+    </div>
+
+    <div class="map" data-reveal>
+      <iframe
+        title="Carte — My Para, Quartier Moderne, 26 Rue 10, Béni Mellal 23600"
+        src="https://www.google.com/maps?q=Quartier%20Moderne%2C%2026%20Rue%2010%2C%20B%C3%A9ni%20Mellal%2023600%2C%20Morocco&output=embed"
+        width="100%" height="100%"
+        style="border:0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="cols2" style="margin-top:18px">
+      <div class="panel" data-reveal>
+        <h3>Venir en magasin</h3>
+        <div class="info-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V5a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4h-3"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg></span>
+          <div><div class="t">En voiture</div><div class="v">Parking gratuit devant la parapharmacie</div><div class="s">Voie facilement accessible depuis le centre-ville</div></div>
+        </div>
+        <div class="info-row">
+          <span class="ic ic--coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="t">Coordonnées</div><div class="v">32°22' N, 6°21' O</div><div class="s">Béni Mellal 23600, région Béni Mellal-Khénifra</div></div>
+        </div>
+      </div>
+
+      <div class="panel" data-reveal style="--d:90ms">
+        <h3>Avant de venir</h3>
+        <p>Deux petites choses qui font la différence :</p>
+        <ul class="advice__list" style="margin-top:14px">
+          <li class="advice__item">
+            <span class="n">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/></svg>
+            </span>
+            <div><h4>Une photo, ça aide énormément</h4><p>Envoyez une photo de votre peau ou de votre cuir chevelu avant de passer : on prepare déjà la bonne réponse.</p></div>
+          </li>
+          <li class="advice__item">
+            <span class="n">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v5M12 17h.01"/><path d="M10.3 3.9 2.4 17.5A1.9 1.9 0 0 0 4 20.4h15.2a1.9 1.9 0 0 0 1.6-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0Z"/></svg>
+            </span>
+            <div><h4>Venez avant 20h30 si vous voulez être conseillée</h4><p>Pour un conseil long (cheveux, bébé), préférez la fin de journée : moins d'affluence, plus de temps pour vous.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band" data-reveal="scale">
+      <h2>Un conseil ?<br>Un seul message suffit.</h2>
+      <p>Décrivez-nous votre besoin en quelques mots. Notre pharmacienne vous répond avec une vraie proposition, pas un catalogue.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa btn--lg" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20%C3%A9crire%20%C3%A0%20propos%20de%20ma%20demande." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          06 61 06 76 21
+        </a>
+        <a class="btn btn--white btn--lg" href="shop.html">Voir la boutique</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="logo">
+          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/><path d="M13 6.5 8 3"/><rect x="6.4" y="1.6" width="2.2" height="4.6" rx="1.1"/></svg></span>
+          <span class="logo__txt"><span class="logo__name">My Para</span><span class="logo__sub">Béni Mellal</span></span>
+        </span>
+        <p>Parapharmacie de quartier, tenue par une pharmacienne. Conseils personnalisés, produits dermocosmétiques certifiés et livraison à domicile.</p>
+        <div class="footer__badges">
+          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9Z"/></svg> 4,9 ★ · 35 avis</span>
+          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Ouvert jusqu'à 21h</span>
+        </div>
+        <div class="socials">
+          <a class="soc" href="https://instagram.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Instagram My Para">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="soc" href="https://facebook.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Facebook My Para">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.9.5-1.2 1.2-1.2H17V2.5h-2.6C11.2 2.5 10 4.4 10 6.8v1.7H8V12h2v9.5h4V12h2.6l.5-3.5Z"/></svg>
+          </a>
+          <a class="soc soc--wa" href="https://wa.me/212661067621" target="_blank" rel="noopener" aria-label="WhatsApp My Para">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Boutique">
+        <h4>Boutique</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Tous les produits</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Visage &amp; solaire</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Anti-chute</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Maman &amp; bébé</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Promotions</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="La parapharmacie">
+        <h4>My Para</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="about.html">Notre histoire</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="services.html">Nos services</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="services.html#livraison">Livraison à domicile</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="contact.html">Nous contacter</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Nous trouver</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Quartier Moderne, 26 Rue 10<br>Béni Mellal 23600, Maroc</span></li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg><a href="https://wa.me/212661067621" target="_blank" rel="noopener">06 61 06 76 21</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Ouvert tous les jours<br>jusqu'à 21h00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bot">
+      <span>© <span data-year>2026</span> My Para — Parapharmacie Béni Mellal. Tous droits réservés.</span>
+      <span class="made"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.5-9A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 21.5 12c-2 4.4-9.5 9-9.5 9Z"/></svg> Fait avec soin à Béni Mellal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== BARRE MOBILE ============================== -->
+<div class="mobile-bar">
+  <a class="btn btn--wa" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20commander." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+    <span class="lbl">Commander</span>
+  </a>
+  <button class="btn btn--mint mb-cart" type="button" data-cart-btn>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    <span class="lbl">Panier</span>
+    <span class="cart-badge">0</span>
+  </button>
+</div>
+
+<!-- ============================== PANIER ============================== -->
+<div class="cart-overlay" data-cart-overlay></div>
+<aside class="cart" data-cart aria-hidden="true" aria-label="Votre panier">
+  <span class="cart__grab" aria-hidden="true"><i></i></span>
+  <div class="cart__head">
+    <h2>Mon panier</h2>
+    <span class="cnt" data-cart-count>Panier vide</span>
+    <button class="icon-btn cart__close" type="button" data-cart-close aria-label="Fermer le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="cart__ship">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V5a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4h-3"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg>
+    <span data-ship-text></span>
+    <span class="bar"><i data-ship-bar></i></span>
+  </div>
+  <div class="cart__body" data-cart-list></div>
+  <div class="cart__foot">
+    <div class="cart__sum">
+      <span class="k">Total</span>
+      <span class="v" data-cart-total>0<small>DH</small></span>
+    </div>
+    <div class="cart__save" data-cart-save></div>
+    <button class="btn btn--wa btn--block btn--lg" type="button" data-cart-order>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+      Commander via WhatsApp
+    </button>
+    <p class="cart__fine">Vous recevez le récapitulatif sur WhatsApp. Paiement à la livraison ou en magasin.</p>
+  </div>
+</aside>
+
+<div class="toast-wrap" aria-live="polite"></div>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+</script>
+</body>
+</html>

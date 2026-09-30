@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Services — Parapharmacie My Para, Béni Mellal</title>
+<meta name="description" content="Nos services : conseil personnalisé par une pharmacienne, livraison à domicile à Béni Mellal, conseil solaire, anti-chute et accompagnement maman et bébé.">
+<meta name="theme-color" content="#5aa483">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%235aa483'/%3E%3Cpath d='M52 26c0 12-16 20-16 34a16 16 0 0 0 32 0c0-14-16-22-16-34Z' fill='none' stroke='%23fff' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body data-page="services">
+
+<body data-page="services">
+<!-- ============================== NAVBAR ============================== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo" href="index.html" aria-label="My Para, accueil">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/><path d="M13 6.5 8 3"/><rect x="6.4" y="1.6" width="2.2" height="4.6" rx="1.1"/></svg>
+      </span>
+      <span class="logo__txt">
+        <span class="logo__name">My Para</span>
+        <span class="logo__sub">Béni Mellal</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link is-active" href="services.html">Boutique</a>
+      <a class="nav__link" href="services.html">Services</a>
+      <a class="nav__link" href="about.html">À propos</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+
+    <button class="icon-btn" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <button class="icon-btn" type="button" data-cart-btn aria-label="Ouvrir le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="cart-badge">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================== MENU MOBILE ============================== -->
+<div class="nav-menu" id="navMenu">
+  <ul class="nav-menu__list">
+    <li class="nav-menu__item" style="--i:0"><a href="index.html" style="color:inherit">Accueil</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:1"><a class="is-active" href="services.html" style="color:inherit">Boutique</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:2"><a href="services.html" style="color:inherit">Services</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:3"><a href="about.html" style="color:inherit">À propos</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li class="nav-menu__item" style="--i:4"><a href="contact.html" style="color:inherit">Contact</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+  </ul>
+  <div class="nav-menu__foot">
+    <a class="btn btn--wa btn--block" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20poser%20une%20question." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+      Demander conseil
+    </a>
+    <p class="nav-menu__meta"><strong>Quartier Moderne</strong> — 26 Rue 10, Béni Mellal 23600</p>
+    <p class="nav-menu__meta">Ouvert tous les jours · <strong>jusqu'à 21h00</strong></p>
+  </div>
+</div>
+
+<main>
+
+<!-- ============================== EN-TÊTE ============================== -->
+<section class="phero">
+  <div class="container phero__inner">
+    <nav class="crumbs" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      <span>Services</span>
+    </nav>
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20.5l1.6-4.6A8.3 8.3 0 0 1 3.6 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 8.4 8.4Z"/></svg>
+      Nos services
+    </span>
+    <h1>Le conseil d'une pharmacienne, et la livraison à domicile.</h1>
+    <p class="t-lead">Chez My Para, la moitié du travail se fait en magasin, en face à face. Voici exactement ce qu'on fait pour vous, et comment en profiter.</p>
+  </div>
+</section>
+
+<!-- ============================== SERVICE 1 : LE CONSEIL ============================== -->
+<section class="section" id="conseil">
+  <div class="container">
+    <div class="advice__grid">
+      <div data-reveal="left">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/><path d="M13 6.5 8 3"/><rect x="6.4" y="1.6" width="2.2" height="4.6" rx="1.1"/></svg>
+          Service n°1
+        </span>
+        <h2 style="margin-top:14px">Le conseil personnalisé<br>de votre pharmacienne</h2>
+        <p class="t-lead" style="margin-top:16px">
+          Le cœur de notre métier. Pas de diagnostic médical — nous n'en faisons pas —
+          mais un vrai entretien : votre type de peau, ce qui vous gêne, ce que vous
+          utilisez déjà, ce que vous êtes prête à faire chaque matin. Et un programme
+          de soins réaliste, que vous tiendrez vraiment.
+        </p>
+        <div class="btn-row" style="margin-top:24px">
+          <a class="btn btn--wa" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20prendre%20un%20conseil%20avec%20votre%20pharmacienne." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.5c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            Demander conseil via WhatsApp
+          </a>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <div class="steps">
+          <div class="step">
+            <div class="step__n">1</div>
+            <h3>Vous décrivez</h3>
+            <p>En magasin, ou sur WhatsApp : votre peau, vos cheveux, votre bébé, votre problème. Une photo si vous voulez.</p>
+          </div>
+          <div class="step">
+            <div class="step__n">2</div>
+            <h3>On pose les bonnes questions</h3>
+            <p>Depuis quand ? Ça gratte, ça brûle, ça lance ? Vous prenez des médicaments ? Quelle est votre routine actuelle ?</p>
+          </div>
+          <div class="step">
+            <div class="step__n">3</div>
+            <h3>Vous repartez avec un plan</h3>
+            <p>Deux ou trois produits, pas douze. Un ordre d'application clair. Et le prix, expliqué.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVICE 2 : LIVRAISON ============================== -->
+<section class="section section--tint" id="livraison">
+  <div class="container">
+    <div class="cols2 cols2--aside">
+      <div>
+        <span class="eyebrow" data-reveal>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V5a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4h-3"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg>
+          Service n°2
+        </span>
+        <h2 data-reveal style="margin-top:14px">La livraison à domicile</h2>
+        <p class="t-lead" style="margin-top:16px" data-reveal>
+          Grippe, oubli, Pas le temps, vous n'êtes pas obligé de vous déplacer. Composez votre commande
+          dans le panier de ce site, ou simplement envoyez-nous la liste sur WhatsApp :
+          nous livrons vos produits chez vous, à Béni Mellal et alentours.
+        </p>
+
+        <div class="panel" style="margin-top:24px" data-reveal>
+          <div class="info-row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><div class="t">Délai</div><div class="v">Le jour même à Béni Mellal</div><div class="s">Commande passée avant 18h, livraison dans la journée</div></div>
+          </div>
+          <div class="info-row">
+            <span class="ic ic--coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <div><div class="t">Frais</div><div class="v">Livraison offerte dès 400 DH</div><div class="s">En dessous, tarif communiqué lors de la confirmation</div></div>
+          </div>
+          <div class="info-row">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><div class="t">Zone</div><div class="v">Béni Mellal et environs</div><div class="s">Quartier Moderne en priorité, puis communes limitrophes</div></div>
+          </div>
+          <div class="info-row">
+            <span class="ic ic--wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></span>
+            <div><div class="t">Comment commander</div><div class="v">Panier du site, ou liste sur WhatsApp</div><div class="s">06 61 06 76 21 — on confirme la disponibilité et le créneau</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel" data-reveal="right">
+        <h3>Comment ça marche</h3>
+        <p>Trois étapes, aucune application à installer.</p>
+        <div class="tl" style="margin-top:18px">
+          <div class="tl__item">
+            <div class="tl__y">ÉTAPE 1</div>
+            <h4>Vous composez</h4>
+            <p>Ajoutez vos produits au panier sur ce site, ou envoyez-nous la liste en message.</p>
+          </div>
+          <div class="tl__item">
+            <div class="tl__y">ÉTAPE 2</div>
+            <h4>Nous confirmons</h4>
+            <p>Notre pharmacienne vérifie la disponibilité, vous propose un créneau et confirme le prix final.</p>
+          </div>
+          <div class="tl__item">
+            <div class="tl__y">ÉTAPE 3</div>
+            <h4>Nous livrons</h4>
+            <p>Votre colis arrive chez vous. Paiement à la livraison, en toute simplicité.</p>
+          </div>
+        </div>
+        <a class="btn btn--wa btn--block" style="margin-top:22px" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20commander%20et%20b%C3%A9n%C3%A9ficier%20de%20la%20livraison%20%C3%A0%20domicile." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Commander maintenant
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== AUTRES CONSEILS ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow eyebrow--coral">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.9 8 10 4.6-1.1 8-5 8-10V6Z"/></svg>
+        Nos autres prestations
+      </span>
+      <h2 style="margin-top:14px">ProtECTION SOLAIRE · ANTI-CHUTE · MATERNITÉ</h2>
+      <p class="t-lead">Trois situations reviennent tout le temps en magasin. On les travaille à part, parce qu'elles méritent plus qu'un conseil de cinq minutes.</p>
+    </div>
+
+    <div class="why__grid stagger">
+      <div class="why__item">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </span>
+        <h3>Conseil protection solaire</h3>
+        <p>Choisir le bon SPF selon votre type de peau, votre exposition réelle et votre rythme de vie. Le mauvais solairesoleil, c'est des taches définitives — on vous explique la différence entre UV, UVA et UVB, et pourquoi le solaire d'été ne suffit pas.</p>
+        <ul class="footer__links" style="margin-top:14px;color:var(--muted)">
+          <li style="color:var(--muted)">Anthelios, Fotoprotector, Aquaporin, Sun Secure</li>
+        </ul>
+      </div>
+
+      <div class="why__item">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15 5 17 4.5 19 2c1 2 2 4.2 2 8a7 7 0 0 1-7 7Z"/><path d="M2 21c0-3 1.9-5.6 4.5-7C9 12.8 12 12 15 12"/></svg>
+        </span>
+        <h3>Consultation anti-chute</h3>
+        <p>Perte de cheveux après une grossesse, un stress, un changement de régime, ou une génétique qui s'exprime. On regarde les causes possibles, on vous oriente si un avis médical est nécessaire, et on pose le bon protocole : Neoxidil, Perfectil, Kerium, DermoCapillaire.</p>
+        <ul class="footer__links" style="margin-top:14px;color:var(--muted)">
+          <li style="color:var(--muted)">Neoxidil, Perfectil, La Roche-Posay Kerium</li>
+        </ul>
+      </div>
+
+      <div class="why__item">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A5.5 5.5 0 0 0 12 5.5 5.5 5.5 0 0 0 2 8.5c0 2.2 1.5 4 3 5.5l7 7Z"/></svg>
+        </span>
+        <h3>Accompagnement maman &amp; bébé</h3>
+        <p>Préparer l'arrivée de bébé, choisir leproducts de toilette du nouveau-né, gérer les rougeurs du siège, les érythèmes, les premiers soins de base. Et pour la maman : la fatigue, les cheveux, et le post-partum.</p>
+        <ul class="footer__links" style="margin-top:14px;color:var(--muted)">
+          <li style="color:var(--muted)">Mustela, CeraVe Bébé, Lipikar Moussant</li>
+        </ul>
+      </div>
+
+      <div class="why__item">
+        <span class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20.5l1.6-4.6A8.3 8.3 0 0 1 3.6 11.5a8.4 8.4 0 0 1 9-8.4 8.4 8.4 0 0 1 8.4 8.4Z"/></svg>
+        </span>
+        <h3>Suivi par WhatsApp</h3>
+        <p>Une fois le produit choisi, on reste joignable. Une question dans trois semaines ? Un message, on répond. Le conseil ne s'arrête pas à la caisse.</p>
+        <ul class="footer__links" style="margin-top:14px;color:var(--muted)">
+          <li style="color:var(--muted)">06 61 06 76 21 — réponse en quelques minutes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section section--mint">
+  <div class="container">
+    <div class="cols2">
+      <div data-reveal>
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.8c0 1.7-2.5 2.2-2.5 2.2"/><path d="M12 17h.01"/></svg>
+          Questions fréquentes
+        </span>
+        <h2 style="margin-top:14px">Ce qu'on nous demande<br>le plus souvent.</h2>
+        <p class="t-lead" style="margin-top:16px">Et si votre question n'est pas là, un message WhatsApp suffit.</p>
+      </div>
+
+      <div class="faq" data-reveal="right">
+        <div class="faq__i">
+          <button class="faq__q" type="button" aria-expanded="false">Faut-il prendre rendez-vous pour un conseil ?<span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq__a"><div><p>Non, jamais. Passez quand vous voulez pendant nos horaires d'ouverture. Pour un sujet plus long (cheveux, on prend le temps), envoyez-nous d'abord un message : on vous propose un créneau où la pharmacienne est disponible sans client.</p></div></div>
+        </div>
+        <div class="faq__i">
+          <button class="faq__q" type="button" aria-expanded="false">Faites-vous des prix par rapport à une pharmacie ?<span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq__a"><div><p>Ce sont des produits de parapharmacie, ils ne sont pas remboursés, et nos prix sont clairement affichés. Aucune comparaison n'est nécessaire : nous vendons au prix juste, et on vous explique toujours ce que vous payez.</p></div></div>
+        </div>
+        <div class="faq__i">
+          <button class="faq__q" type="button" aria-expanded="false">Livrez-vous en dehors de Béni Mellal ?<span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq__a"><div><p>Nous livrons principalement à Béni Mellal, le jour même si la commande est passée avant 18h. Pour les communes proches, la livraison se fait le lendemain. Contactez-nous sur WhatsApp pour votre adresse exacte.</p></div></div>
+        </div>
+        <div class="faq__i">
+          <button class="faq__q" type="button" aria-expanded="false">Puis-je payer en ligne ?<span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq__a"><div><p>Le paiement se fait à la livraison, ou directement en magasin. C'est plus simple, et ça vous permet de vérifier les produits avant de partir. Aucune donnée bancaire ne transite par ce site.</p></div></div>
+        </div>
+        <div class="faq__i">
+          <button class="faq__q" type="button" aria-expanded="false">Vos produits sont-ils cosmétiques ou médicaux ?<span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq__a"><div><p>Ce sont des produits de parapharmacie : cosmétiques, dermo-cosmétiques et compléments alimentaires. Si votre situation nécessite un avis médical, nous vous y orientons sans hésiter.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band" data-reveal="scale">
+      <h2>Une question ?<br>Écrivez-nous, on répond.</h2>
+      <p>Une photo de votre peau, de vos cheveux, ou la liste de ce qu'il vous faut pour votre bébé. Notre pharmacienne vous répond avec une vraie proposition.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa btn--lg" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20un%20conseil%20personnalis%C3%A9." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Demander conseil via WhatsApp
+        </a>
+        <a class="btn btn--white btn--lg" href="shop.html">Voir la boutique</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="logo">
+          <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3c0 4.5-6 7.5-6 13a6 6 0 0 0 12 0c0-5.5-6-8.5-6-13Z"/><path d="M13 6.5 8 3"/><rect x="6.4" y="1.6" width="2.2" height="4.6" rx="1.1"/></svg></span>
+          <span class="logo__txt"><span class="logo__name">My Para</span><span class="logo__sub">Béni Mellal</span></span>
+        </span>
+        <p>Parapharmacie de quartier, tenue par une pharmacienne. Conseils personnalisés, produits dermocosmétiques certifiés et livraison à domicile.</p>
+        <div class="footer__badges">
+          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9Z"/></svg> 4,9 ★ · 35 avis</span>
+          <span class="footer__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Ouvert jusqu'à 21h</span>
+        </div>
+        <div class="socials">
+          <a class="soc" href="https://instagram.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Instagram My Para">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="soc" href="https://facebook.com/parapharmacie_benimellal" target="_blank" rel="noopener" aria-label="Facebook My Para">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.9.5-1.2 1.2-1.2H17V2.5h-2.6C11.2 2.5 10 4.4 10 6.8v1.7H8V12h2v9.5h4V12h2.6l.5-3.5Z"/></svg>
+          </a>
+          <a class="soc soc--wa" href="https://wa.me/212661067621" target="_blank" rel="noopener" aria-label="WhatsApp My Para">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav aria-label="Boutique">
+        <h4>Boutique</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Tous les produits</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Visage &amp; solaire</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Anti-chute</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Maman &amp; bébé</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="shop.html">Promotions</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="La parapharmacie">
+        <h4>My Para</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="about.html">Notre histoire</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="services.html">Nos services</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="services.html#livraison">Livraison à domicile</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg><a href="contact.html">Nous contacter</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Nous trouver</h4>
+        <ul class="footer__links">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Quartier Moderne, 26 Rue 10<br>Béni Mellal 23600, Maroc</span></li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg><a href="https://wa.me/212661067621" target="_blank" rel="noopener">06 61 06 76 21</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Ouvert tous les jours<br>jusqu'à 21h00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bot">
+      <span>© <span data-year>2026</span> My Para — Parapharmacie Béni Mellal. Tous droits réservés.</span>
+      <span class="made"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.5-9A5.4 5.4 0 0 1 12 6.5 5.4 5.4 0 0 1 21.5 12c-2 4.4-9.5 9-9.5 9Z"/></svg> Fait avec soin à Béni Mellal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== BARRE MOBILE ============================== -->
+<div class="mobile-bar">
+  <a class="btn btn--wa" href="https://wa.me/212661067621?text=Bonjour%20My%20Para%2C%20je%20souhaite%20commander." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+    <span class="lbl">Commander</span>
+  </a>
+  <button class="btn btn--mint mb-cart" type="button" data-cart-btn>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    <span class="lbl">Panier</span>
+    <span class="cart-badge">0</span>
+  </button>
+</div>
+
+<!-- ============================== PANIER ============================== -->
+<div class="cart-overlay" data-cart-overlay></div>
+<aside class="cart" data-cart aria-hidden="true" aria-label="Votre panier">
+  <span class="cart__grab" aria-hidden="true"><i></i></span>
+  <div class="cart__head">
+    <h2>Mon panier</h2>
+    <span class="cnt" data-cart-count>Panier vide</span>
+    <button class="icon-btn cart__close" type="button" data-cart-close aria-label="Fermer le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="cart__ship">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17V5a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1"/><path d="M14 9h4l4 4v4h-3"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg>
+    <span data-ship-text></span>
+    <span class="bar"><i data-ship-bar></i></span>
+  </div>
+  <div class="cart__body" data-cart-list></div>
+  <div class="cart__foot">
+    <div class="cart__sum">
+      <span class="k">Total</span>
+      <span class="v" data-cart-total>0<small>DH</small></span>
+    </div>
+    <div class="cart__save" data-cart-save></div>
+    <button class="btn btn--wa btn--block btn--lg" type="button" data-cart-order>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7 0a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.2 3.2 0 0 0-1 2.4 5.5 5.5 0 0 0 1.2 2.9 12.7 12.7 0 0 0 4.8 4.3c.7.3 1.2.5 1.6.6a4 4 0 0 0 1.8.1 2.9 2.9 0 0 0 1.9-1.3 2.4 2.4 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+      Commander via WhatsApp
+    </button>
+    <p class="cart__fine">Vous recevez le récapitulatif sur WhatsApp. Paiement à la livraison ou en magasin.</p>
+  </div>
+</aside>
+
+<div class="toast-wrap" aria-live="polite"></div>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+</script>
+</body>
+</html>
